@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project</title>
+  <link rel="stylesheet" type="text/css"  media="screen" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+<section class="home-page">
+    <img class="image-slides active" src="images/stylish-woman-with-shopping-bags (1).jpg" alt="BG1">
+    <img class="image-slides" src="images/portrait-pretty-woman-dress-holding-mobile-phone.jpg" alt="BG2">
+    <img class="image-slides" src="images/medium-shot-woman-escalators.jpg" alt="BG3">
+
+    <div class="content">
+        <p>Click To Buy presents</p><br>
+        <h1>smart gadgets</h1><br>
+        <p>we provide best quality product</p><br>
+        <button class="nav_button">SHOP NOW</button>
+    </div>
+    <div class="slides-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+    </div>
+</section>
+<div class="scale-boxs">
+    <div class="box1 box">
+        <div class="icon">
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="text">
+        <h2>Best Quality</h2>
+        <p>best quality is must</p>
+        </div>
+    </div>
+    <div class="box2 box">
+        <div class="icon">
+            <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="text">
+            <h2>Shipping</h2>
+            <p>Deliver within 24 hours</p>
+            </div>
+    </div>
+    <div class="box3 box">
+        <div class="icon">
+            <i class="fa-solid fa-clock"></i>
+        </div>
+        <div class="text">
+            <h2>24/7 Help Center</h2>
+            <p>contact us 24 hours a day</p>
+            </div>
+    </div>
+    <div class="box4 box">
+        <div class="icon">
+            <i class="fa-solid fa-gift"></i>
+        </div>
+        <div class="text">
+            <h2>Gift promotion</h2>
+            <p>on order over 50$</p>
+        </div>
+    </div>
+</div>
+<div class="box-deals">
+    <div class="deal1 deals">
+        <div class="deals-text">
+            <h1>hot deals</h1>
+            <p>sale up to </p>
+            <h1>30% off</h1>
+            <p>offer ends in</p>
+        </div>
+        <div class="date-text">
+            <div class="date">
+                <h2>99:</h2>
+                <p>Days</p>
+            </div>
+            <div class="date">
+                <h2>06:</h2>
+                <p>Hours</p>
+            </div>
+            <div class="date">
+                <h2>25:</h2>
+                <p>Min</p>
+            </div>
+            <div class="date">
+                <h2>59</h2>
+                <p>Sec</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="deal2 deals">
+        <div class="image">
+        <img src="images/17636462_Smartwatch_Mockup2.jpg">
+    </div>
+        <div class="deal-details">
+         <h3>SmartWatch MOCKUP</h3>
+         <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+         </div>
+         <h4>$120</h4>
+        </div>
+        <div class="cart-shopping">
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>  
+    </div>
+    </div>
+    <div class="deal3 deals">
+        <div class="image">
+            <img src="images/1609440_P2PDWD0.jpg">
+        </div>
+            <div class="deal-details">
+             <h3>HeadPhone MOCKUP</h3>
+             <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+             </div>
+             <h4>$90</h4>
+            </div>
+            <div class="cart-shopping">
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>  
+        </div>
+    </div>
+    <div class="deal4 deals">
+        <div class="image">
+            <img src="images/1175128_OS97160.jpg">
+        </div>
+            <div class="deal-details">
+             <h3>Smart Computer MOCKUP</h3>
+             <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+             </div>
+             <h4>$1500</h4>
+            </div>
+            <div class="cart-shopping">
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>  
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    //javascript for slides navigation buttons and images slides
+    const btns= document.querySelectorAll(".nav-btn");
+    const slides= document.querySelectorAll(".image-slides");
+    var sliderNav = function(manual){
+        btns.forEach((btn) => {
+            btn.classList.remove("active");
+        });
+
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+    }
+    btns.forEach((btn, i) => {
+    btn.addEventListener("click" , ()=>{ ;
+    sliderNav(i);
+    });
+});
+</script>
+</body>
+</html>
