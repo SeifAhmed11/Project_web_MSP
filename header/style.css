@@ -1,0 +1,38 @@
+.Container {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.Colors-Nav {
+  color: green;
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Items {
+  padding: 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
+.Btn {
+  border: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Right-Nav {
+  float: right;
+}
